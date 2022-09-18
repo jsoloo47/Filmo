@@ -1,6 +1,5 @@
 # Introduction
-Save recommended movie's from recommender built on themoviedb.org's API.
-
+Filmo - on-demand movie recommendation application service. Built with Node, Express, MovieDB API, MongoDB, Google OAuth 2.0 and EJS. See code 
 # Packages/Dependencies used 
 
 bcrypt, connect-mongo, dotenv, ejs, express, express-flash, express-session, mongodb, mongoose, morgan, nodemon, passport, passport-local, validator
