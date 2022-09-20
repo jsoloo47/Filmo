@@ -43,7 +43,7 @@ app.use(flash())
   
 app.use('/', mainRoutes)
 app.use('/todos', todoRoutes)
-app.use('/movie', movieRoutes)
+app.use('/watchlist', movieRoutes)
 
  
 app.listen(process.env.PORT, ()=>{
