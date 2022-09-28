@@ -9,6 +9,14 @@ const WatchlistSchema = new mongoose.Schema({
     type: Boolean,
     required: true,
   },
+  posterPath: {
+    type: Boolean,
+    required: true,
+  },
+  desc: {
+    type: Boolean,
+    required: true,
+  },
   userId: {
     type: String,
     required: true

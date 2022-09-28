@@ -1,7 +1,7 @@
 const deleteBtn = document.querySelectorAll('.del')
-const todoItem = document.querySelectorAll('span.not')
+const watchlistTitle = document.querySelectorAll('span.not')
 const randomButton = document.querySelector('#random')
-const todoComplete = document.querySelectorAll('span.completed')
+const movieWatched = document.querySelectorAll('span.completed')
 
 randomButton.addEventListener('click', () => location.reload())
 
@@ -16,11 +16,11 @@ Array.from(deleteBtn).forEach((el)=>{
     el.addEventListener('click', deleteMovie)
 })
 
-Array.from(todoItem).forEach((el)=>{
+Array.from(watchlistTitle).forEach((el)=>{
     el.addEventListener('click', markComplete)
 })
 
-Array.from(todoComplete).forEach((el)=>{
+Array.from(movieWatched).forEach((el)=>{
     el.addEventListener('click', markIncomplete)
 })
 

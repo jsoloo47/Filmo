@@ -22,8 +22,15 @@ module.exports = {
       }
   },
   createList: async (req, res)=>{
+    console.log(req.body);
       try{
-          await Watchlist.create({movieTitle: req.body.movieTitle, watched: false, userId: req.user.id})
+          await Watchlist.create({
+            movieTitle: req.body.movieTitle, 
+            posterPath: req.body.posterPath, 
+            desc: req.body.desc, 
+            watched: false, 
+            userId: req.user.id
+        })
           console.log('Movie has been added!')
           res.redirect('/watchlist')
       }catch(err){

@@ -9,7 +9,6 @@ const logger = require('morgan')
 const connectDB = require('./config/database')
 
 const mainRoutes = require('./routes/main')
-const todoRoutes = require('./routes/todos')
 const movieRoutes = require('./routes/movie')
 
 
@@ -42,7 +41,6 @@ app.use(passport.session())
 app.use(flash())
   
 app.use('/', mainRoutes)
-app.use('/todos', todoRoutes)
 app.use('/watchlist', movieRoutes)
 
  
